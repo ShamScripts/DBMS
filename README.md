@@ -1,10 +1,3 @@
-# DBMS
-DBMS LAB CODES
-
-
-# Creating the README content in .md format
-
-readme_content = """
 # Database Systems Lab
 **Semester 2 (2025-26)**  
 **Language:** SQL  
