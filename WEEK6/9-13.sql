@@ -20,25 +20,25 @@ SELECT * FROM OrdersByDate;
 
 -- Left Outer Join 
 
-SELECT C.course_id, C.course_name, P.prereq_id
+SELECT C.course_id, C.dept_name, P.prereq_id
 FROM COURSE C
 LEFT OUTER JOIN PREREQ P ON C.course_id = P.course_id;
 
 -- Right Outer Join 
 
-SELECT C.course_id, C.course_name, P.prereq_id
+SELECT C.course_id, C.dept_name, P.prereq_id
 FROM COURSE C
 RIGHT OUTER JOIN PREREQ P ON C.course_id = P.course_id;
 
 -- Full Outer Join Example (Using UNION in MySQL)
 
-SELECT C.course_id, C.course_name, P.prereq_id
+SELECT C.course_id, C.dept_name, P.prereq_id
 FROM COURSE C
 LEFT OUTER JOIN PREREQ P ON C.course_id = P.course_id
 
 UNION
 
-SELECT C.course_id, C.course_name, P.prereq_id
+SELECT C.course_id, C.dept_name, P.prereq_id
 FROM COURSE C
 RIGHT OUTER JOIN PREREQ P ON C.course_id = P.course_id
 WHERE C.course_id IS NULL;
